@@ -1,6 +1,6 @@
 # #### Superheroes API  
 This app is a superhero management backend built with Flask, created on 21/06/2025  
-By Dennis Msyoka
+By Bismark Bett
 
 
 ## Description  
@@ -9,13 +9,13 @@ This Flask API allows you to manage a database of superheroes and their powers. 
 
 ## Features / User Stories  
 
-### A User Can:
+**A User Can:**
 - View all superheroes
 - View details of a specific superhero including their powers
 - View and update power descriptions
 - Assign a power to a hero with a specific strength level
 
-### The API Can:
+**The API Can:**
 - Validate that power descriptions are at least 20 characters long
 - Validate that hero power strength is one of 'Strong', 'Weak', or 'Average'
 - Send an email to a configured address when a new hero power is created
@@ -33,20 +33,24 @@ The application works perfectly well, no bugs.
   SQLite
   
 ## Setup/Installation Requirements
-1. Clone this repo to your local machine
-   ```bash
+1. **Fork and Clone this repo to your local machine**
+   ``bash
   git clone git@github.com:Biss1996/superheroes.git
   cd superheroes
-2. Create a virtual environment and install dependencies
+2. **Create a virtual environment and install dependencies**
+``bash
        pipenv install
        pipenv shell
-3. Run migrations to create the database
+3. **Run migrations to create the database**
+``bash
        flask db init
        flask db migrate -m "Initial migration"
        flask db upgrade
-4. Seed the database
+4. **Seed the database**
+``bash
        python seed.py
-5. Run the development server
+5. **Run the development server**
+``bash
         python app.py
 
 
@@ -59,4 +63,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
